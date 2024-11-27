@@ -19,7 +19,7 @@
       <ul>
         <li><a href="#sobre">Sobre Nós</a></li>
         <li><a href="#menu">Cardápio</a></li>
-        <li><a href="#locate">Localização</a></li>
+        <li><a href="#local">Localização</a></li>
       </ul>
     </nav>
   </header>
@@ -57,7 +57,7 @@
 
   <section id="menu" class="menu">
     <h2 data-aos="fade-up">Cardápio</h2>
-    <div class="burguer-grid">
+    <div class="burguer-flex">
 
       <div class="burguer-item" data-aos="flip-up" data-aos-delay="400" data-aos-duration="800">
 
@@ -68,14 +68,12 @@
         <p>Pão, alface, tomate, carne.
           <br>
           <br>
-          <b style="color: green; font-size: 20px">R$ 16,99</b>
+          <span class="preco">R$ 16,99</span>
           <br>
         </p>
-        <div class="btn">
-          <a href="#" style="color: white; text-decoration: none">
+        <a class="btn" href="#">
             Pedir
-          </a>
-        </div>
+        </a>
       </div>
 
       <div class="burguer-item" data-aos="flip-up" data-aos-delay="400" data-aos-duration="800">
@@ -84,27 +82,26 @@
         <p><span data-aos="zoom-out" data-aos-delay="400" data-aos-duration="800"><b>2x</b></span>&nbsp; Pão, alface, tomate, carne.
         <br>
         <br>
-          <b style="color: green; font-size: 20px">R$ 23,99</b>
+          <span class="preco">R$ 23,99</span>
           <br>
         </p>
-        <div class="btn">
-          <a href="#" style="color: white; text-decoration: none">
-            Pedir
-          </a>
-        </div>
+        <a class="btn" href="#">
+          Pedir
+        </a>
       </div>
 
-      <h5 data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800" style="color: #999"> >> - - - - - - - Mais opções em breve! - - - - - - - << </h5>
+      <h5 data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800"> >> - - - - - - - Mais opções em breve! - - - - - - - << </h5>
       
       <!-- + -->
 
     </div>
   </section>
 
-  <section id="locate" class="locate" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+  <section id="local" class="local" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
     <h2>Endereço</h2>
-    <p><i class="fas fa-map-marker-alt"></i> Xique-Xique, BA</p>
-    <p><i class="fas fa-phone"></i> <a style="color: #333">(21) 98765-4321</a>
+    <p>
+    <a target="_blank" href="https://maps.app.goo.gl/8aFM7AU7N6KbGUrT6"><i class="fas fa-map-marker-alt"></i> Xique-Xique, BA</a><br>
+    <a href="telprompt://0?handleType=phoneNumber"><i class="fas fa-phone"></i> (21) 98765-4321</a>
     </p>
   </section>
 

@@ -1,4 +1,19 @@
-@use 'all' as *;
+@use "all" as *;
+
+::selection {
+    background-color: $CorGeral;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: white;
+
+    &-thumb {
+        background-color: $CorGeral;
+        border-radius: 10px;
+    }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -18,47 +33,54 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-}
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
+    nav {
+        ul {
+            list-style: none;
+            padding: 0;
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+            li {
+                display: inline;
+                margin: 0 15px;
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 }
 
 .sobre,
 .menu,
-.locate {
+.local {
     padding: 50px;
     text-align: center;
 }
 
-.locate {
+.local {
     padding: 70px;
+    
+    a{
+        color: $CorTexto;
+        text-decoration: none;
+    }
 }
 
 #sobre {
     margin-top: -160px;
-}
 
-#sobre hr {
-    border: 1px solid transparent;
-    animation: bar 3s both;
-    margin-top: -24px;
-    margin-bottom: -11px;
-    animation-delay: 2.1s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    hr {
+        border: 1px solid transparent;
+        animation: bar 3s both;
+        margin-top: -24px;
+        margin-bottom: -11px;
+        animation-delay: 2.1s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
 }
 
 @keyframes bar {
@@ -133,108 +155,110 @@ header nav ul li a {
 
 .pao-1 {
     height: 40px;
-    background-color: #ffb356;
+    background-color: $cor-pao;
     border-radius: 50px 50px 10px 10px;
     top: 0;
 }
 
 .alface {
     height: 8px;
-    background-color: #4caf50;
+    background-color: $cor-alface;
     border-radius: 20px;
     top: 40px;
 }
 
 .tomate {
     height: 7px;
-    background-color: #e53935;
+    background-color: $cor-tomate;
     border-radius: 10px;
     top: 47px;
 }
 
 .queijo {
     height: 5px;
-    background-color: #ffeb3b;
+    background-color: $cor-queijo;
     border-radius: 5px;
     top: 54px;
 }
 
 .carne {
     height: 25px;
-    background-color: #795548;
+    background-color: $cor-carne;
     border-radius: 10px;
     top: 59px;
 }
 
 .pao-2 {
     height: 20px;
-    background-color: #ffb356;
+    background-color: $cor-pao;
     border-radius: 10px 10px 50px 50px;
     top: 84px;
 }
 
-.burguer-grid {
+.burguer-flex {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-}
 
-.burguer-item {
-    margin: 15px;
-    padding: 30px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    .burguer-item {
+        margin: 15px;
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-.burguer-item:hover {
-    transition: all 1.5s ease-in-out;
-    -webkit-transition: all 2s ease-in-out;
-    animation: destaque 1.5s infinite ease-in-out;
-}
+        img {
+            max-width: 270px;
+            border-radius: 100%;
+            border: 0.1px solid $CorGeral;
+        }
 
-@keyframes destaque {
-    0%,
-    100% {
-        box-shadow: 0 0 0 0.5px $CorGeral;
-        scale: 1;
+        &:hover {
+            transition: all 1.5s ease-in-out;
+            -webkit-transition: all 2s ease-in-out;
+            animation: destaque 1.5s infinite ease-in-out;
+
+            .btn {
+                transition: all 1.6s;
+                -webkit-transition: all 1.6s;
+                opacity: 1;
+            }
+        }
+        .btn {
+            opacity: 0;
+            background-color: $CorGeral;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 10px 25px;
+            color: white;
+            font-size: 16px;
+            margin: 0 auto;
+            transition: all .5s ease-in;
+            -webkit-transition: all .5s ease-in;
+
+
+            &:hover {
+                border-radius: 35px;
+                padding: 11px 50px;
+            }
+        }
+        .preco {
+            color: green;
+            font-size: 20px;
+            font-weight: 555;
+        }
     }
-
-    50% {
-        box-shadow: 0 0 0 1px $CorGeral;
-        scale: 1.016;
+    h5{
+        color: #999;
     }
 }
 
-.burguer-item img {
-    max-width: 270px;
-    border-radius: 100%;
-    border: 0.1px solid $CorGeral;
-}
-
-.burguer-item:hover .btn {
-    transition: all 1.6s;
-    -webkit-transition: all 1.6s;
-    opacity: 1;
-}
-
-.burguer-item .btn {
-    opacity: 0;
-    background-color: $CorGeral;
-    border-radius: 5px;
-    text-decoration: none;
+.informations {
+    text-align: center;
+    margin-bottom: 20px;
     padding: 10px;
-    color: white;
-    width: 75px;
-    font-size: 16px;
-    margin: 0 auto;
-    transition: all 1.6s;
-    -webkit-transition: all 1.6s;
-}
-
-.burguer-item .btn:hover {
-    border-radius: 35px;
-    padding: 11px;
+    font-size: 10px;
 }
 
 footer {
@@ -248,9 +272,15 @@ footer {
     padding: 2px;
 }
 
-.informations {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 10px;
+@keyframes destaque {
+    0%,
+    100% {
+        box-shadow: 0 0 0 0.5px $CorGeral;
+        scale: 1;
+    }
+
+    50% {
+        box-shadow: 0 0 0 1px $CorGeral;
+        scale: 1.016;
+    }
 }
