@@ -1,13 +1,9 @@
-:root {
-  --CorG: #FF4500
-}
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   color: #333;
 }
 
@@ -16,7 +12,7 @@ html {
 }
 
 header {
-  background-color: var(--CorG);
+  background-color: #ff4500;
   color: white;
   padding: 20px;
   text-align: center;
@@ -59,23 +55,20 @@ header nav ul li a {
   margin-top: -24px;
   margin-bottom: -11px;
   animation-delay: 2.1s;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @keyframes bar {
   from {
     width: 0px;
   }
-
   to {
     width: 150px;
-    border: 1px solid var(--CorG);
+    border: 1px solid #ff4500;
     border-radius: 10px;
   }
 }
-
-
 .Hamburguer {
   margin-top: 100px;
   position: relative;
@@ -115,7 +108,7 @@ header nav ul li a {
   top: -8px;
   left: -10px;
   display: block;
-  content: '';
+  content: "";
   transform: rotate(-35deg);
 }
 
@@ -131,12 +124,12 @@ header nav ul li a {
   border-bottom: 9px solid gold;
   border-left: 15px solid transparent;
   transform: rotate(-70deg);
-  content: '';
+  content: "";
 }
 
 .pao-1 {
   height: 40px;
-  background-color: #FFB356;
+  background-color: #ffb356;
   border-radius: 50px 50px 10px 10px;
   top: 0;
 }
@@ -171,7 +164,7 @@ header nav ul li a {
 
 .pao-2 {
   height: 20px;
-  background-color: #FFB356;
+  background-color: #ffb356;
   border-radius: 10px 10px 50px 50px;
   top: 84px;
 }
@@ -197,23 +190,19 @@ header nav ul li a {
 }
 
 @keyframes destaque {
-
-  0%,
-  100% {
-    box-shadow: 0 0 0 .5px var(--CorG);
+  0%, 100% {
+    box-shadow: 0 0 0 0.5px #ff4500;
     scale: 1;
   }
-
   50% {
-    box-shadow: 0 0 0 1px var(--CorG);
-    scale: 1.016
+    box-shadow: 0 0 0 1px #ff4500;
+    scale: 1.016;
   }
 }
-
 .burguer-item img {
   max-width: 270px;
   border-radius: 100%;
-  border: .1px solid var(--CorG);
+  border: 0.1px solid #ff4500;
 }
 
 .burguer-item:hover .btn {
@@ -224,7 +213,7 @@ header nav ul li a {
 
 .burguer-item .btn {
   opacity: 0;
-  background-color: var(--CorG);
+  background-color: #ff4500;
   border-radius: 5px;
   text-decoration: none;
   padding: 10px;
@@ -242,7 +231,7 @@ header nav ul li a {
 }
 
 footer {
-  background-color: var(--CorG);
+  background-color: #ff4500;
   color: white;
   text-align: center;
   position: fixed;
@@ -252,9 +241,11 @@ footer {
   padding: 2px;
 }
 
-.informations{
+.informations {
   text-align: center;
   margin-bottom: 20px;
   padding: 10px;
-  font-size: 10px
+  font-size: 10px;
 }
+
+/*# sourceMappingURL=styles.css.map */
