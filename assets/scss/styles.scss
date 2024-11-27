@@ -233,7 +233,7 @@ header {
             padding: 10px 25px;
             color: white;
             font-size: 16px;
-            margin: 0 auto;
+            margin: 20px auto;
             transition: all .5s ease-in;
             -webkit-transition: all .5s ease-in;
 
@@ -251,6 +251,34 @@ header {
     }
     h5{
         color: #999;
+    }
+}
+
+.carrinho{
+    padding: 15px 14px;
+    background-color: $CorGeral;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+
+    i{
+        color: white;
+        font-size: 20px;
+    }
+
+    &::after
+    {
+        content: '0';
+        position: absolute;
+        top: -8px;
+        right: -2px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 5px 7px;
+        font-size: 10px;
     }
 }
 
