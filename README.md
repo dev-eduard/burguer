@@ -1,6 +1,6 @@
 <h1 align="center">Sobre o repositório</h1>
 
-<p align="center">Criei este repositório com intuito de aperfeiçoar meus conhecimentos com a biblioteca Data-AOS</p>
+<p align="center">Criei este repositório com intuito de aperfeiçoar meus conhecimentos</p>
 
 <br>
 
