@@ -15,4 +15,4 @@
 
 <br>
 <br>
-<p align="right"><a href="https://marcoseduardo.dev.br">eduardoc126</a></p>
+<p align="right"><a href="https://marcoseduardo.dev.br">dev.eduard</a></p>
