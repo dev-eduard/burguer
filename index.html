@@ -5,165 +5,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Burger</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <meta name="theme-color" content="#ff4500">
   
+  <link rel="stylesheet" href="assets/styles/css/styles.css">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  
+  <link rel="stylesheet" href="assets/styles/css/bootstrap.css">
 </head>
 
 <body>
   <header class="header">
-    <h1 data-aos="fade-down">Bem-vindo(a) ao <b style="font-size: 35px">Burger</b></h1>
+    <h1 data-aos="fade-down">Bem-vindo(a)</h1>
     <nav data-aos="fade-up">
       <ul>
-        <li><a href="#sobre">Sobre Nós</a></li>
         <li><a href="#menu">Cardápio</a></li>
         <li><a href="#local">Localização</a></li>
       </ul>
     </nav>
   </header>
   <br>
-
-  <div style="text-align: center" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1000">
-
-    <h2 style="color: #ff4500">Burger</h2>
-    <div style="margin-top: -24px; margin-bottom: -70px; font-size: 14px">
-      <q>Ilumine Seu Apetite!</q>
+  
+  <div id="loadScreen" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); ">
+    <div class="Hamburguer" style="margin-top: 100px">
+      <div class="estrela" data-aos="zoom-out" data-aos-delay="1800" data-aos-duration="1000"></div>
+      <div class="camadas pao-1" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="800"></div>
+      <div class="camadas alface" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800"></div>
+      <div class="camadas tomate" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800"></div>
+      <div class="camadas queijo" data-aos="fade-down" data-aos-delay="600" data-aos-duration="800"></div>
+      <div class="camadas carne" data-aos="fade-down" data-aos-delay="400" data-aos-duration="800"></div>
+      <div class="camadas pao-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800"></div>
     </div>
-
   </div>
-
-  <div class="Hamburguer" style="margin-top: 100px">
-    <div class="estrela" data-aos="zoom-out" data-aos-delay="1800" data-aos-duration="1000"></div>
-    <div class="camadas pao-1" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="800"></div>
-    <div class="camadas alface" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800"></div>
-    <div class="camadas tomate" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800"></div>
-    <div class="camadas queijo" data-aos="fade-down" data-aos-delay="600" data-aos-duration="800"></div>
-    <div class="camadas carne" data-aos="fade-down" data-aos-delay="400" data-aos-duration="800"></div>
-    <div class="camadas pao-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800"></div>
-  </div>
-
-  <section id="sobre" class="sobre">
-
-    <h2 data-aos="fade-up" data-aos-delay="2000">Sobre Nós</h2>
-    <hr>
-    <p data-aos="zoom-in" data-aos-delay="2900">A Burger oferece os melhores hambúrgueres da cidade, com ingredientes frescos e uma receita especial que vai fazer você se encantar!</p>
-    <br>
-    <br>
-    <br>
-    <br>
-  </section>
-
-  <section id="menu" class="menu">
-    <h2 data-aos="fade-up">Cardápio</h2>
-    <div class="burguer-flex">
-
-      <div class="burguer-item" data-aos="flip-up" data-aos-delay="400" data-aos-duration="800">
-
-        <i class="fas fa-beat fa-star" style="color: #ff4500; position: absolute; right: 25px; top: 25px"></i>
-        
-        <img src="assets/img/burguer1.png">
-        <h3>Hambúrguer clássico</h3>
-        <p>Pão, alface, tomate, carne.
-          <br>
-          <br>
-          <span class="preco">R$ 16,99</span>
-          <br>
-        </p>
-        <a class="btn" id="btnPedir1">
-            Adicionar
-        </a>
-      </div>
-
-      <div class="burguer-item" data-aos="flip-up" data-aos-delay="400" data-aos-duration="800">
-        <img src="assets/img/burguer2.webp">
-        <h3>Hambúrguer duplo</h3>
-        <p><span data-aos="zoom-out" data-aos-delay="400" data-aos-duration="800"><b>2x</b></span>&nbsp; Pão, alface, tomate, carne.
-        <br>
-        <br>
-          <span class="preco">R$ 23,99</span>
-          <br>
-        </p>
-        <a class="btn" id="btnPedir2">
-          Adicionar
-        </a>
-      </div>
-
-      <h5 data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800"> >> - - - - - - - Mais opções em breve! - - - - - - - << </h5>
+  
+  
+  <section id="menu">
+    
+    <h1 style="color: #ff4500; text-align: center">Promoções</h1>
+    <div id="carrouselMenu" class="carousel slide" data-bs-ride="carousel">
       
-      <!-- + -->
-
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carrouselMenu" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carrouselMenu" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carrouselMenu" data-bs-slide-to="2"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="assets/img/Hsimples.png" class="rounded d-block w-75 mx-auto" alt="Hamburguer simples">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="assets/img/Hduplo.png" class="rounded d-block w-75 mx-auto" alt="Hamburguer duplo">
+        </div>
+        
+        
+        <div class="carousel-item">
+          <img src="assets/img/Honion.png" class="rounded d-block w-75 mx-auto" alt="Hamburguer duplo">
+        </div>
+        
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrouselMenu" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrouselMenu" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+      
     </div>
   </section>
-
-  <div class="carrinho" id="carrinho">
-    <span id="itens__carrinho"></span>
-    <i class="fa-solid fa-cart-shopping"></i>
-  </div>
-
+  
   <section id="local" class="local" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
-    <h2>Endereço</h2>
+    <h2 style="color: #ff4500;">Endereço</h2>
     <p>
-    <a target="_blank" href="https://maps.app.goo.gl/8aFM7AU7N6KbGUrT6"><i class="fas fa-map-marker-alt"></i> Xique-Xique, BA</a><br>
-    <a href="telprompt://0?handleType=phoneNumber"><i class="fas fa-phone"></i> (21) 98765-4321</a>
+      <a target="_blank" href="https://maps.app.goo.gl/8aFM7AU7N6KbGUrT6"><i class="fas fa-map-marker-alt"></i> Xique-Xique, BA</a><br>
+      <a href="telprompt://0?handleType=phoneNumber"><i class="fas fa-phone"></i> (99) 99999-9999</a>
     </p>
   </section>
-
+  
   <section id="comprar__carrinho">
-      <form action="javascript:void(0);" method="POST" id="form-pedido"> 
-        <span id="close" class="fa-regular fa-circle-xmark"></span>
-        <h1>Carrinho</h1>
-        <div class="nome-cliente">
-          <label>Nome
-            <input type="text" placeholder="Digite seu nome" required>
-          </label>
-        </div>
-        <div class="numero-contato">
-          <label for="numeroContato">Número para contato
-            <input type="text" id="numeroContato" placeholder="(XX) XXXXX-XXXX" maxlength="15">
-          </label>
-        </div>
-        <div class="local-entrega">
-          <label>Local de entrega
-            <input type="text" placeholder="Digite seu endereço" required>
-          </label>
-        </div>
-        <div class="pagamento">
-          <label>Forma de pagamento
-            <select required id="select">
-              <option value="dinheiro">Dinheiro</option>
-              <option value="credito">Crédito</option>
-              <option value="debito">Débito</option>
-              <option value="pix" selected>Pix</option>
-            </select>
-            
-          </label>
-          <label id="troco">Precisa de troco?
-            <input type="number" required value="0" min="0" max="200">
-          </label>
-        </div>
-        <div id="total">R$:0,00</div>
-        <button class="btn" type="submit" id="btn-finalizar">Finalizar</button>
-        <div class="previsao-entrega">
-          <span>Previsao de entrega: <span id="previsao-entrega"></span></span>
-        </div>
-      </form>
+    <form action="javascript:void(0);" method="POST" id="form-pedido">
+      <span id="close" class="fa-regular fa-circle-xmark"></span>
+      <h1>Carrinho</h1>
+      <div class="nome-cliente">
+        <label>Nome
+          <input type="text" placeholder="Digite seu nome" required>
+        </label>
+      </div>
+      <div class="numero-contato">
+        <label for="numeroContato">Número para contato
+          <input type="text" id="numeroContato" placeholder="(XX) XXXXX-XXXX" maxlength="15">
+        </label>
+      </div>
+      <div class="local-entrega">
+        <label>Local de entrega
+          <input type="text" placeholder="Digite seu endereço" required>
+        </label>
+      </div>
+      <div class="pagamento">
+        <label>Forma de pagamento
+          <select required id="select">
+            <option value="dinheiro">Dinheiro</option>
+            <option value="credito">Crédito</option>
+            <option value="debito">Débito</option>
+            <option value="pix" selected>Pix</option>
+          </select>
+          
+        </label>
+        <label id="troco">Precisa de troco?
+          <input type="number" required value="0" min="0" max="200">
+        </label>
+      </div>
+      <div id="total">R$:0,00</div>
+      <button class="btn" type="submit" id="btn-finalizar">Finalizar</button>
+      <div class="previsao-entrega">
+        <span>Previsao de entrega: <span id="previsao-entrega"></span></span>
+      </div>
+    </form>
   </section>
-
-
+  
+  
   <section class="informations">
-    Site created by <a style="color: #ff4500; text-decoration: none" href="https://marcoseduardo.dev.br" target="_blank">@eduardo_c126</a>, all rights reserved!
+    Site created by <a style="color: #ff4500; text-decoration: none" href="https://marcoseduardo.dev.br" target="_blank">@dev.eduard</a>, all rights reserved!
     <br>
     Images generated by AI
   </section>
-
-  <footer class="footer" data-aos="fade-up">&copy; Burger - <span id="ano"></span>
-  </footer>
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/scripts/main.js"></script>
 </body>
 
 </html>
